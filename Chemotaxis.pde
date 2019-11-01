@@ -14,15 +14,13 @@
  }   
  void draw()   
  {    
-   //move and show the bacteria
-   //Bacteria stupid = new Bacteria();
+   
    background(255, 10);
    for(int i = 0; i < stupid.length; i++)
    {
      stupid[i].move();  
      stupid[i].show();
      stupid[i].contagion();
-     System.out.println(stupid[i].infected);
    }
   }  
 
@@ -35,8 +33,7 @@
   }
  class Bacteria    
  {     
-   //lots of java!
-   //int[] col = new int[3];
+  
    int myX,myY,col, infected;
    double chance;
    Bacteria()
